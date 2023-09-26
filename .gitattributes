@@ -1,0 +1,40 @@
+## Sources
+
+*.py    text diff=python
+
+# Jupyter notebook
+*.ipynb text eol=lf
+
+
+## Python binary files
+
+*.db     binary
+*.p      binary
+*.pkl    binary
+*.pickle binary
+*.pyc    binary export-ignore
+*.pyo    binary export-ignore
+*.pyd    binary
+
+
+## Data
+
+*.csv text
+*.tab text
+*.tsv text
+
+
+## MS Office
+
+*.doc   binary
+*.docx  binary
+*.xls   binary
+*.xlsx  binary
+*.ppt   binary
+*.pptx  binary
+
+
+## Documents
+
+*.rtf binary
+*.pdf binary

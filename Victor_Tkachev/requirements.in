@@ -1,0 +1,16 @@
+catboost
+gdown
+feature_engine
+# itables
+lightgbm
+matplotlib
+mlxtend
+numpy
+openpyxl
+phik
+seaborn
+scikit-learn
+tpot
+tqdm
+xgboost
+zodiac-sign

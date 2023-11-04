@@ -1,16 +1,18 @@
-catboost
-gdown
+# catboost
+dill
+gama
+# gdown
 feature_engine
 # itables
-lightgbm
+# lightgbm
 matplotlib
 mlxtend
 numpy
 openpyxl
-phik
+# phik
 seaborn
 scikit-learn
-tpot
-tqdm
-xgboost
+# tpot
+# tqdm
+# xgboost
 zodiac-sign

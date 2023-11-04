@@ -12,6 +12,7 @@
 *.p      binary
 *.pkl    binary
 *.pickle binary
+*.joblib binary
 *.pyc    binary export-ignore
 *.pyo    binary export-ignore
 *.pyd    binary

@@ -2,6 +2,10 @@
 .idea/
 .vscode/
 
+# Special
+catboost_info/
+notebooks/gama_*
+
 # Mac/OSX
 .DS_Store
 

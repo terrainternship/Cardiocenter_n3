@@ -30,7 +30,7 @@ def print_metrics(metrics: dict):
     print("{:<55} {:>5.2f}%".format("Доля предсказаний с отклонением не более 0,5 мг:", metrics['percentage_diff']))
 
 
-def plot_predictions(y_pred, y_true):
+def plot_predictions(y_pred, y_true, title='Сравнение предсказанной и назначенной доз'):
     ae = np.abs(y_pred - y_true)
     # size = 20 * ae + 1
 
@@ -39,7 +39,7 @@ def plot_predictions(y_pred, y_true):
     
     # Добавляем colorbar
     plt.colorbar(scatter, label='Абсолютная ошибка')
-    plt.title('Сравнение предсказанной и назначенной доз')
+    plt.title('title')
     plt.xlabel('Предсказанная доза')
     plt.ylabel('Назначенная доза')
     plt.grid(True)

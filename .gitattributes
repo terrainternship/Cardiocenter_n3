@@ -2,20 +2,24 @@
 
 *.py    text diff=python
 
-# Jupyter notebook
+
+## Jupyter notebook
+
 *.ipynb text eol=lf
 
 
 ## Python binary files
 
 *.db     binary
+*.pyc    binary export-ignore
+*.pyo    binary export-ignore
+*.pyd    binary
+
 *.p      binary
 *.pkl    binary
 *.pickle binary
 *.joblib binary
-*.pyc    binary export-ignore
-*.pyo    binary export-ignore
-*.pyd    binary
+*.dill   binary
 
 
 ## Data

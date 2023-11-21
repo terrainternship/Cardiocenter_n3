@@ -1,18 +1,20 @@
 # catboost
 dill
+category_encoders
 gama
 # gdown
 feature_engine
 # itables
 # lightgbm
+ipykernel  # IPython kernel for Jupyter
 matplotlib
 mlxtend
 numpy
-openpyxl
+# openpyxl
 # phik
 seaborn
 scikit-learn
 # tpot
 # tqdm
 # xgboost
-zodiac-sign
+# zodiac-sign

@@ -1,6 +1,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 from matplotlib.colors import LinearSegmentedColormap
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
@@ -10,6 +11,9 @@ cmap_gr = LinearSegmentedColormap.from_list('green_red', ['g', 'r'])
 
 
 def calculate_metrics(y_pred, y_true) -> dict:
+    y_pred = getattr(y_pred, 'values', y_pred)
+    y_true = getattr(y_true, 'values', y_true)
+
     mae = mean_absolute_error(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
     r2 = r2_score(y_true, y_pred)
@@ -34,12 +38,18 @@ def plot_predictions(y_pred, y_true, title='Сравнение предсказ�
     ae = np.abs(y_pred - y_true)
     # size = 20 * ae + 1
 
+    plt.axis('equal')
+    plt.axline((0, 0), slope=1, color='k', alpha=0.1)
+
     # Добавляем точечную диаграмму
+    # plt.plot([0, 1], [0, 1], transform=plt.gca().transAxes, color='lightgray')
     scatter = plt.scatter(y_pred, y_true, marker='.', c=ae, cmap=cmap_gr)
-    
+    # scatter.plot([0, 1], [0, 1], transform=scatter.axes.transAxes)
+
     # Добавляем colorbar
     plt.colorbar(scatter, label='Абсолютная ошибка')
-    plt.title('title')
+
+    plt.title(title + f' (N={len(y_pred)})')
     plt.xlabel('Предсказанная доза')
     plt.ylabel('Назначенная доза')
     plt.grid(True)

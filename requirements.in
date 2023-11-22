@@ -1,20 +1,10 @@
+-r dist/requirements.txt
 # catboost
-dill
-category_encoders
 gama
-# gdown
-feature_engine
-# itables
-# lightgbm
 ipykernel  # IPython kernel for Jupyter
 matplotlib
 mlxtend
 numpy
-# openpyxl
-# phik
+openpyxl
 seaborn
 scikit-learn
-# tpot
-# tqdm
-# xgboost
-# zodiac-sign

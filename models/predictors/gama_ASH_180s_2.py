@@ -1,11 +1,11 @@
+from sklearn.pipeline import Pipeline
+from category_encoders.ordinal import OrdinalEncoder
+from category_encoders.one_hot import OneHotEncoder
 from category_encoders.target_encoder import TargetEncoder
 from numpy import nan
+from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.pipeline import Pipeline
-from category_encoders.one_hot import OneHotEncoder
-from category_encoders.ordinal import OrdinalEncoder
-from sklearn.impute import SimpleImputer
 
 pipeline = Pipeline(
     [
